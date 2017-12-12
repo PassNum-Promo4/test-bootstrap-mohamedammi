@@ -3,58 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <title>Bootstrap</title>
+  <!-- links bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- optionnal javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
 </head>
-<body>
-  <img src="http://fakeimg.pl/150/" alt="fakeimage">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <button type="button">Oui</button>
-  <button type="button">Non</button>
-  <h1>Lorem Ipsum</h1>
-  <p>Aenean eget lorem ac mi tristique volutpat. 
-  Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
-  <a href="#">Super</a>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
+<body >
+  <!-- Ajout d'un container globale -->
+  <div class="container-fluid">
+    <!-- specifier la direction row des elements-->
+    <div class="row">
+      <!-- ajout d'un aside pour les prmiers elements et specifier les affichages en small medium et large ecran en col- -->
+      <aside class="col-sm-12 col-md-3 col-lg-4 bg-dark text-white d-flex flex-column p-3">
+        <img class="align-self-center rounded-circle" src="http://fakeimg.pl/150/" alt="fakeimage">
+        <p class="align-self-center mt-3 mb-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+          rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+          lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+          orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+          Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+        </p>
+        <!-- specifier le type des boutons en success et danger et le positionnement -->
+        <div class=" d-flex justify-content-around">
+          <button class="btn btn-success"type="button">Oui</button>
+          <button class="btn btn-danger"type="button">Non</button>
+        </div>
+      </aside>
+      <!-- ajout d'une section contenant les articles du site et specifier les diff affichages -->
+      <section class="col-sm-12 col-md-9 col-lg-8 p-3">
+
+        <h1>Lorem Ipsum</h1>
+        <p>Aenean eget lorem ac mi tristique volutpat.
+        Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
+        <!-- Ajout de l'option button primary au lien -->
+        <a class="btn btn-primary" href="#">Super</a>
+        <!-- ajout d un div pour specifier la direction d'affichage des articles en row -->
+        <div class="row p-3">
+          <article class="col-sm-12 col-md-12 col-lg-6">
+            <img class="m-3" src="http://fakeimg.pl/300/" alt="fakeimg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+              rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+              lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+              orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+              Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+            </p>
+          </article>
+          <article class="col-sm-12 col-md-12 col-lg-6">
+            <img class="m-3" src="http://fakeimg.pl/300/" alt="fakeimg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+              rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+              lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+              orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+              Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+            </p>
+          </article>
+          <article class="col-sm-12 col-md-12 col-lg-6">
+            <img class="m-3" src="http://fakeimg.pl/300/" alt="fakeimg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+              rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+              lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+              orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+              Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+            </p>
+          </article>
+          <article class="col-sm-12 col-md-12 col-lg-6">
+            <img class="m-3" src="http://fakeimg.pl/300/" alt="fakeimg">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
+              rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id
+              lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu
+              orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
+              Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
